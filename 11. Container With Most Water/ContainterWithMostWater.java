@@ -10,9 +10,9 @@ public class ContainterWithMostWater {
             int area = (height[i] <= height[j] ? height[i] : height[j]) * (j-i);
             if (area > maxArea) maxArea = area;
             if (height[i] > height[j]) {
-                j++;
+                j--;
             } else {
-                i--;
+                i++;
             }
         }
 

@@ -32,7 +32,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        String s = "LVIII";
+        String s = "MCMXCIV";
         System.out.println(Solution.romanToInt(s));
     }
 }

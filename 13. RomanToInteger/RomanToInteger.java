@@ -1,5 +1,5 @@
 
-class Solution {
+class RomanToInteger {
     public static int romanToInt(String s) {
         char[] keys = new char[] {'I', 'V', 'X',  'L',  'C',   'D',  'M'};
         int[] values = new int[] { 1,   5,   10,   50,   100,  500,  1000};
@@ -33,6 +33,6 @@ class Solution {
 
     public static void main(String[] args) {
         String s = "MCMXCIV";
-        System.out.println(Solution.romanToInt(s));
+        System.out.println(RomanToInteger.romanToInt(s));
     }
 }

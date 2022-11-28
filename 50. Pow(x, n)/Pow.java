@@ -1,21 +1,16 @@
 
 public class Pow {
     public static double myPow(double x, int n) {
-        if (n>0) {
-            if (n == Integer.MIN_VALUE || n == Integer.MAX_VALUE) {
-                return toThePower(x, 1, n/2) + toThePower(x, 1, n/2);
-            }
-            return toThePower(x, 1, n);
-        } else {
-            if (n == Integer.MIN_VALUE || n == Integer.MAX_VALUE) {
-                return 1/(toThePower(x, 1, Math.abs(n/2)) + toThePower(x, 1, Math.abs(n/2)));
-            }
-            return 1/toThePower(x, 1, Math.abs(n));
-        }
+        if (n == 0) return 1.0;
+        else if (n % 2 == 1) return x * myPow(x, n - 1); //if odd
+        else if (n % 2 == 0) return myPow(x * x, n / 2); // if even
+        else return 1 / myPow(x, -n);
     }
     public static double toThePower(double x, double result, int n) {
-        if (x==1.00 || x==-1.00) {
+        if (x==1.00) {
             return 0.5;
+        } else if (x==-1.00) {
+            return -0.5;
         }
         if (n!=0) {
             if (n%2 == 0) {

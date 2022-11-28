@@ -2,10 +2,11 @@
     "java.project.sourcePaths": [
         "9. Palindrome Number",
         "74. Search a 2D Matrix",
+        "50. Pow(x, n)",
         "17. Letter Combinations of a Phone Number",
         "13. RomanToInteger",
         "11. Container With Most Water",
         "1. Two Sum",
-        "50. Pow(x, n)"
+        "2225. Find Players With Zero or One Losses"
     ]
 }

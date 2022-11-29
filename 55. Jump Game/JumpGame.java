@@ -15,12 +15,6 @@ public class JumpGame {
             if (numberOfSteps < nums[i]) {
                 numberOfSteps = nums[i];
             }
-            System.out.println("-----------------");
-            System.out.println("index: " + i);
-            System.out.println("Steps Left: " + numberOfSteps);
-            System.out.println("Current Step Update: " + nums[i]);
-            System.out.println("-----------------");
-
             if (numberOfSteps <=0) {
                 return false;
             }
